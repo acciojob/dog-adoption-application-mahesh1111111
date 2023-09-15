@@ -1,16 +1,46 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+<title>Dog Adoption Application</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+</style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+<h1>Dog Adoption Application</h1>
 
+<form action="/action_page.php" method="post">
+<input type="text" id="name" name="name" placeholder="Name">
+<input type="text" id="phone" name="phone" placeholder="Phone Number">
+<input type="text" id="address" name="address" placeholder="Address">
+<input type="checkbox" id="checkbox" name="checkbox" value="Have you ever lived with a Dog before?"> Have you ever lived with a Dog before?
+<select id="multiSelect" name="multiSelect" multiple>
+<option value="Labrador Retriever">Labrador Retriever</option>
+<option value="German Shepherd">German Shepherd</option>
+<option value="Golden Retriever">Golden Retriever</option>
+</select>
+<input type="submit" value="Submit">
+</form>
 </body>
-
 </html>
